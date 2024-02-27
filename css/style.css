@@ -1,0 +1,156 @@
+section .title-input input {
+  color: white !important;
+}
+section .title-input input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .price-inputs .price input {
+  color: white !important;
+}
+section .price-inputs .price input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .price-inputs .taxes input {
+  color: white !important;
+}
+section .price-inputs .taxes input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .price-inputs .ads input {
+  color: white !important;
+}
+section .price-inputs .ads input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .price-inputs .discount input {
+  color: white !important;
+}
+section .price-inputs .discount input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .price-inputs p {
+  background-color: rgb(180, 2, 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section .quantity-input input {
+  color: white !important;
+}
+section .quantity-input input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .category input {
+  color: white !important;
+}
+section .category input::-webkit-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .category input::-moz-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .category input:-ms-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .category input::-ms-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .category input::placeholder {
+  color: rgb(61, 61, 61);
+}
+section .category input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .create-btn button {
+  background-color: rgb(84, 38, 191) !important;
+}
+section .create-btn button:hover {
+  background-color: rgb(120, 38, 191) !important;
+}
+section .create-btn button:active {
+  border-color: rgb(172, 120, 255) !important;
+}
+section .search .search-input input {
+  color: white !important;
+}
+section .search .search-input input::-webkit-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .search .search-input input::-moz-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .search .search-input input:-ms-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .search .search-input input::-ms-input-placeholder {
+  color: rgb(61, 61, 61);
+}
+section .search .search-input input::placeholder {
+  color: rgb(61, 61, 61);
+}
+section .search .search-input input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+section .search .buttons .search-by-title-btn button {
+  background-color: rgb(84, 38, 191) !important;
+}
+section .search .buttons .search-by-title-btn button:hover {
+  background-color: rgb(120, 38, 191) !important;
+}
+section .search .buttons .search-by-title-btn button:active {
+  border-color: rgb(172, 120, 255) !important;
+}
+section .search .buttons .search-by-category-btn button {
+  background-color: rgb(84, 38, 191) !important;
+}
+section .search .buttons .search-by-category-btn button:hover {
+  background-color: rgb(120, 38, 191) !important;
+}
+section .search .buttons .search-by-category-btn button:active {
+  border-color: rgb(172, 120, 255) !important;
+}
+input {
+  color: white !important;
+}
+input::-webkit-input-placeholder {
+  color: rgb(61, 61, 61) !important;
+}
+input::-moz-placeholder {
+  color: rgb(61, 61, 61) !important;
+}
+input:-ms-input-placeholder {
+  color: rgb(61, 61, 61) !important;
+}
+input::-ms-input-placeholder {
+  color: rgb(61, 61, 61) !important;
+}
+input::placeholder {
+  color: rgb(61, 61, 61) !important;
+}
+input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+}
+
+button {
+  background-color: rgb(84, 38, 191) !important;
+}
+button:hover {
+  background-color: rgb(120, 38, 191) !important;
+}
+button:active {
+  border-color: rgb(172, 120, 255) !important;
+}

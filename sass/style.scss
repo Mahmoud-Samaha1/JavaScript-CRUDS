@@ -1,0 +1,175 @@
+section {
+    .title {}
+
+    .title-input {
+        input {
+            color: white !important;
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+            }
+        }
+    }
+
+    .price-inputs {
+        .price {
+            input {
+                color: white !important;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+                }
+            }
+        }
+
+        .taxes {
+            input {
+                color: white !important;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+                }
+            }
+        }
+
+        .ads {
+            input {
+                color: white !important;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+                }
+            }
+        }
+
+        .discount {
+            input {
+                color: white !important;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+                }
+            }
+        }
+
+        p {
+            background-color: rgb(180, 2, 2);
+            width: fit-content;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+        }
+
+    }
+
+    .quantity-input {
+        input {
+            color: white !important;
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+            }
+        }
+    }
+
+    .category {
+        input {
+            color: white !important;
+
+            &::placeholder {
+                color: rgb(61, 61, 61);
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+            }
+        }
+    }
+
+    .create-btn button {
+        background-color: rgb(84, 38, 191) !important;
+
+        &:hover {
+            background-color: rgb(120, 38, 191) !important;
+        }
+
+        &:active {
+            border-color: rgb(172, 120, 255) !important;
+        }
+    }
+
+    .search {
+        .search-input {
+            input {
+                color: white !important;
+
+                &::placeholder {
+                    color: rgb(61, 61, 61);
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+                }
+            }
+        }
+
+        .buttons {
+            .search-by-title-btn button {
+
+                background-color: rgb(84, 38, 191) !important;
+
+                &:hover {
+                    background-color: rgb(120, 38, 191) !important;
+                }
+
+                &:active {
+                    border-color: rgb(172, 120, 255) !important;
+                }
+            }
+
+            .search-by-category-btn button {
+                background-color: rgb(84, 38, 191) !important;
+
+                &:hover {
+                    background-color: rgb(120, 38, 191) !important;
+                }
+
+                &:active {
+                    border-color: rgb(172, 120, 255) !important;
+                }
+            }
+        }
+    }
+
+    #deleteAll {
+        // display: none;
+    }
+}
+
+input {
+    color: white !important;
+
+    &::placeholder {
+        color: rgb(61, 61, 61) !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+    }
+}
+
+button {
+
+    background-color: rgb(84, 38, 191) !important;
+
+    &:hover {
+        background-color: rgb(120, 38, 191) !important;
+    }
+
+    &:active {
+        border-color: rgb(172, 120, 255) !important;
+    }
+}

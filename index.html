@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="bg-dark text-light ">
+    <div class="container">
+        <section class="crud ">
+            <div class="title text-center mb-3">
+                <h1 class="text-uppercase">cruds</h1>
+                <h5 class="text-capitalize">product management system</h5>
+            </div>
+            <div class="mb-3 title-input ">
+                <input type="text" class="form-control bg-black border-black" name="title" id="title"
+                    aria-describedby="helpId" placeholder="Title" />
+            </div>
+            <!-- price Inputs -->
+            <div class="price-inputs row">
+                <div class="mb-3 price col-3">
+                    <input type="number" min="0" class="form-control bg-black border-black" name="price" id="price"
+                        aria-describedby="helpId" onkeyup="getTotalPrice()" onchange="getTotalPrice()"
+                        placeholder="price" />
+                </div>
+                <div class="mb-3 taxes col-2">
+                    <input type="number" min="0" class="form-control bg-black border-black" name="taxes" id="taxes"
+                        aria-describedby="helpId" onkeyup="getTotalPrice()" onchange="getTotalPrice()"
+                        placeholder="taxes" />
+                </div>
+                <div class="mb-3 ads col-2">
+                    <input type="number" min="0" class="form-control bg-black border-black" name="ads" id="ads"
+                        aria-describedby="helpId" onkeyup="getTotalPrice()" onchange="getTotalPrice()"
+                        placeholder="ads" />
+                </div>
+                <div class="mb-3 discount col-2">
+                    <input type="number" min="0" class="form-control bg-black border-black" name="discount"
+                        id="discount" aria-describedby="helpId" onkeyup="getTotalPrice()" onchange="getTotalPrice()"
+                        placeholder="discount" />
+                </div>
+                <p class="text-light col-3 text-end pt-1 " id="total">Total:</p>
+            </div>
+            <!-- quantity -->
+            <div class="mb-3  quantity-input">
+                <input type="number" min="0" class="form-control bg-black border-black" name="quantity" id="quantity"
+                    aria-describedby="helpId" placeholder="quantity" />
+            </div>
+            <!-- category -->
+            <div class="mb-3 category">
+                <input type="text" class="form-control bg-black border-black" name="category" id="category"
+                    aria-describedby="helpId" placeholder="category" />
+            </div>
+            <!-- create -->
+            <div class="d-grid gap-2 create-btn mb-3">
+                <button type="button" name="create" id="create" class=" btn text-light text-center">Create</button>
+            </div>
+            <!-- search  -->
+            <div class="search row">
+                <div class="mb-3 search-input col-12">
+                    <input type="text" onkeyup="searchProducts(this.value)" onchange="searchProducts(this.value)"
+                        class="form-control bg-black border-black" name="search" id="search" aria-describedby="helpId"
+                        placeholder="search" />
+                </div>
+                <div class="buttons d-flex justify-content-between">
+                    <div class="d-grid gap-2 search-by-title-btn mb-3 col-5">
+                        <button type="button" onclick="getSearchMode(this.id)" name="searchByTitle" id="searchByTitle"
+                            class="btn text-light text-center">Search By Title
+                        </button>
+                    </div>
+                    <div class="d-grid gap-2 search-by-category-btn mb-3 col-5 ">
+                        <button type="button" onclick="getSearchMode(this.id)" name="searchByCategory"
+                            id="searchByCategory" class="btn text-light text-center">
+                            Search By Category
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="delete-all-div d-grid gap-2 create-btn mb-3">
+                <button type="button" name="deleteAll" id="deleteAll" class=" btn text-light text-center">
+                    Delete All
+                </button>
+            </div>
+        </section>
+
+        <!-- product table -->
+        <div class="table-responsive">
+            <table class="table table-primary table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">ID
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            title
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            price
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            taxes
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            ads
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            discount</th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            total
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            quantity</th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            category</th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            update
+                        </th>
+                        <th scope="col" class="text-uppercase fw-bold bg-transparent border-0 text-light text-center">
+                            delete
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">R1C1</td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">
+                            <div class="d-grid gap-2">
+                                <button type="button" name="" id="" class="btn text-capitalize text-light">
+                                    update
+                                </button>
+                        </td>
+                        <td scope="row" class="bg-transparent border-0 text-light text-center">
+                            <div class="d-grid gap-2">
+                                <button type="button" name="" id="" class="btn text-capitalize text-light">
+                                    delete
+                                </button>
+                            </div>
+                        </td>
+
+                    </tr> -->
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
